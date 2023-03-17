@@ -1,0 +1,104 @@
+/* Write some CSS below */
+body {
+    background-color: #FCECC9;
+    color:  #445E93;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-weight: regular;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 36px;
+    color: #7EB2DD;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 28px;
+    color: #7EB2DD;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+#Introduction {
+    margin-bottom: 40px;
+}
+
+.card-white {
+    background-color: white;
+    text-align: center;
+    padding: 40px;
+    border: 2px solid #7EB2DD;
+    border-radius: 4px;
+    margin: 50px 10px;
+    box-shadow: 10px 20px 30px #7EB2DD;
+}
+
+#mario {
+  width: 150px;
+}
+
+.container {
+    width: 700px;
+    margin: 20px auto;
+}
+
+ol {
+    display: inline-block;
+}
+
+p {
+    text-align: justify;
+}
+
+.name-underline {
+    color: #7EB2DD;
+    font-size: 100%;
+    text-shadow: 0 0 100px #445E93, 0 0 20px;
+}
+
+#cap{
+width: 80px;
+}
+
+#cap:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/* On se fait zizir */
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.list-inline li div{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.list-inline li p{
+  text-align: center;
+}
+
+.list-inline li img{
+  display: block;
+  margin: auto auto;
+}
+
+.icon-enemy {
+  height: 80px;
+}
+
+#bowjnr {
+  height: 120px;
+}

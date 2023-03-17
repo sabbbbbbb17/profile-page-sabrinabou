@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mario - Profile page</title>
+
+  <!-- Change these Google fonts with your own choice -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="card-white">
+      <h1> Hello, I'm Mario 🥸 </h1>
+      <img src="images/mario.avif" alt="Mario" class="img-circle" onclick="play();" id="mario">
+      <p id="introduction">
+        Mario est un personnage de jeu vidéo devenu la mascotte de Nintendo, facilement reconnaissable à sa moustache,
+        à sa salopette bleue, à ses gants blancs et à sa casquette rouge marquée d'un M inscrit dans un cercle blanc.
+      </p>
+      <img src="images/powerup.webp" class="img-circle" alt="" onclick="play();" id="cap">
+    </div>
+
+    <div class="card-white">
+      <h2>Missions Ⓜ️</h2>
+        <p>Mario s'est fait une spécialité de sauver les princesses en détresse et notamment la Princesse Peach
+          (souvent enlevée par Bowser ou Bowser Junior), dont il semble amoureux, ce qui est peut-être réciproque.
+          Bien que cette mission soit présente dans de nombreux jeux, il arrive parfois à Mario de sauver Daisy ou encore Pauline,
+          notamment dans Donkey Kong et dans la série Mario vs. Donkey Kong qui a 6 volets.</p>
+    </div>
+
+    <div class="card-white">
+      <h2>Ennemis principaux 👺 </h2>
+      <ul class="list-inline">
+        <li><div><img src="gifs/bowser.gif" alt="" class="icon-enemy">Bowser</div></li>
+        <li><div><img src="gifs/bowjnr.gif" alt="" class="icon-enemy" id="bowjnr">Bowser Jr.</div></li>
+        <li><div><img src="gifs/wario.gif" alt="" class="icon-enemy">Wario</div></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script>
+    function play() {
+      const audio = document.getElementById("audio");
+      const mario = document.getElementById("mario");
+      mario.classList.add("animate__animated", "animate__bounce");
+      audio.play();
+      const new_mario = mario.cloneNode(true);
+      mario.parentNode.replaceChild(new_mario, mario);
+    };
+  </script>
+
+  <audio id="audio" src="sounds/powerup.wav"></audio>
+
+
+</body>
+</html>
